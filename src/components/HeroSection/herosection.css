@@ -1,5 +1,6 @@
 .hero-section-container {
   display: flex;
+  position: relative;
   max-width: 110rem;
   height: 1080px;
   border: 1px solid;
@@ -7,6 +8,6 @@
 
 @media screen and (max-width: 900px) {
   .hero-section-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
