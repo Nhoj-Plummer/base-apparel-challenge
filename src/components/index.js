@@ -1,1 +1,1 @@
-export { default as HeroSection } from "../components/HeroSection/herosection"
+export { default as HeroData } from "../components/HeroData/herodata"

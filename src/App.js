@@ -1,10 +1,10 @@
 import "./App.css"
-import { HeroSection } from "./components"
+import { HeroData } from "./components"
 
 function App() {
   return (
     <>
-      <HeroSection />
+      <HeroData />
     </>
   )
 }
