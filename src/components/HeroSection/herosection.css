@@ -1,4 +1,5 @@
 .hero-section-container {
+  display: flex;
   width: 90rem;
   height: 1080px;
   justify-content: center;
