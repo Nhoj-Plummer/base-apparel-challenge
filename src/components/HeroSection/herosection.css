@@ -2,8 +2,6 @@
   display: flex;
   max-width: 110rem;
   height: 1080px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid;
 }
 
