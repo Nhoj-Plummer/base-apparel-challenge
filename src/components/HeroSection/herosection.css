@@ -1,8 +1,10 @@
 .hero-section-container {
   display: flex;
-  width: 90rem;
+  width: 110rem;
   height: 1080px;
-  justify-content: center;
-  align-content: center;
-  border: 1px solid red;
+  border: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+  
 }

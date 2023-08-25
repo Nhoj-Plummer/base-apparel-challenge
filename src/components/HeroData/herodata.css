@@ -1,0 +1,19 @@
+.hero-data_image-container {
+  border: 1px solid blue;
+  width: 80%;
+}
+
+.hero-data_text-container {
+  border: 1px solid red;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../../assets//bg-pattern-desktop.svg');
+}
+
+
+
+.hero-data_text-image {
+  width: 100%;
+  border: 1px solid purple;
+}
