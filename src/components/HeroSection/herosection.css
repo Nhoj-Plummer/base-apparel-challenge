@@ -1,6 +1,5 @@
 .hero-section-container {
   display: flex;
-  position: relative;
   max-width: 110rem;
   height: 1080px;
   border: 1px solid;
@@ -11,3 +10,5 @@
     flex-direction: column;
   }
 }
+
+

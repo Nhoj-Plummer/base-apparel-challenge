@@ -6,7 +6,7 @@ import Logo from "../../assets/logo.svg"
 const Herodata = () => {
   return (
     <HeroSection>
-      {/* <div className="hero-data_text-image">
+      <div className="hero-data_text-image">
         <img src={Logo} alt="logo" />
       </div>
       <div className="hero-data_text-container">
@@ -14,7 +14,7 @@ const Herodata = () => {
         <p className="hero-data-text-description"></p>
         <form className="hero-data-text-form"></form>
       </div>
-      <div className="hero-data_image-container"></div> */}
+      <div className="hero-data_image-container"></div>
     </HeroSection>
   )
 }

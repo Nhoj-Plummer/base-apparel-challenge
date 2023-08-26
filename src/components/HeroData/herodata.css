@@ -1,1 +1,11 @@
+.hero-data_text-image {
+  border: 1px solid yellow;
+}
 
+.hero-data_text-container {
+  border: 1px solid blue;
+}
+
+.hero-data_image-container {
+  border: 1px solid red;
+}
