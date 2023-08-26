@@ -1,6 +1,6 @@
 .hero-section-container {
   display: flex;
-  max-width: 110rem;
+  max-width: 1080px;
   height: 1080px;
   border: 1px solid;
 }
