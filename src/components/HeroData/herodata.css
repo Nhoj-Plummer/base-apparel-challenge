@@ -1,9 +1,9 @@
 .hero-data_text-image,
 .hero-data_text-container {
   flex: 0 0 50%;
-  width: 100%;
-  background-size: cover;
+  max-width: 100%;
 }
+
 .hero-data_text-image {
   border: 1px solid green;
 }
@@ -14,12 +14,12 @@
 
 .hero-data_image-container {
   flex: 0 0 100%;
-  background-image: url("../../assets/hero-desktop.jpg");
-  width: 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width:40%;
+  
+  /* background-image: url("../../assets/hero-desktop.jpg"); */
   border: 1px solid red;
 }
+
 
 @media screen and (max-width: 900px) {
   .hero-data_text-image {
