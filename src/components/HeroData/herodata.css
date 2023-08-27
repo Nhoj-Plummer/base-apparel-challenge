@@ -1,4 +1,4 @@
-.hero-data_text-image,
+/* /* .hero-data_text-image,
 .hero-data_text-container {
   flex: 0 0 50%;
   max-width: 100%;
@@ -26,9 +26,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid red;
-}
+} */ 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .hero-data_text-image,
   .hero-data_image-container,
   .hero-data_text-container {
@@ -46,4 +46,6 @@
   .hero-data_image-container {
     order: 2;
   }
-}
+} */
+
+
