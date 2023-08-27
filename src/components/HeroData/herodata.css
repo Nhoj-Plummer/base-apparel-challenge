@@ -26,7 +26,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid red;
-} */ 
+} */
 
 /* @media screen and (max-width: 900px) {
   .hero-data_text-image,
@@ -47,5 +47,29 @@
     order: 2;
   }
 } */
+.hero-data_image-container,
+.hero-data_text-container,
+.hero-data_text-image {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
+.hero-data_text-image {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
 
+.hero-data_text-container {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+.hero-data_image-container {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
