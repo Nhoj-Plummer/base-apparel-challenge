@@ -5,23 +5,36 @@
 }
 
 .hero-data_text-image {
+  max-height: 10%;
   border: 1px solid green;
+  z-index: 0;
 }
 
 .hero-data_text-container {
+  max-height: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135% 100%;
+  background-image: url('../../assets/bg-pattern-desktop.svg');
   border: 1px solid blue;
 }
 
 .hero-data_image-container {
   flex: 0 0 100%;
-  width:40%;
-  
-  /* background-image: url("../../assets/hero-desktop.jpg"); */
+  min-height: 40%;
+  background-image: url("../../assets/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid red;
 }
 
-
 @media screen and (max-width: 900px) {
+  .hero-data_text-image,
+  .hero-data_image-container,
+  .hero-data_text-container {
+    flex: 0;
+  }
+
   .hero-data_text-image {
     order: 1;
   }
