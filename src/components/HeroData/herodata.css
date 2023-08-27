@@ -2,22 +2,20 @@
 .hero-data_text-container {
   flex: 0 0 50%;
   width: 100%;
-  background: no-repeat center url("../../assets/bg-pattern-desktop.svg");
+  background-size: cover;
 }
 .hero-data_text-image {
-  max-height: 10%;
   border: 1px solid green;
 }
 
 .hero-data_text-container {
   border: 1px solid blue;
-  min-height: 90%;
 }
 
 .hero-data_image-container {
   flex: 0 0 100%;
   background-image: url("../../assets/hero-desktop.jpg");
-  min-width: 40%;
+  width: 40%;
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid red;
