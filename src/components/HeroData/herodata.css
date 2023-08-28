@@ -47,6 +47,33 @@
     order: 2;
   }
 } */
+
+.hero-data_image-container {
+  background-size: cover;
+  background-image: url("../../assets/hero-desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+/* Mobile Design Rules  */
+@media screen and (max-width: 999px) {
+  .hero-data_text-image {
+    order: 1;
+    height: 10%;
+    background-color: green;
+  }
+
+  .hero-data_text-container {
+    order: 3;
+    height: 60%;
+    background-color: blue;
+  }
+
+  .hero-data_image-container {
+    order: 2;
+    height: 40%;
+    background-color: red;
+  }
+}
 .hero-data_image-container,
 .hero-data_text-container,
 .hero-data_text-image {
@@ -56,6 +83,7 @@
   justify-content: center;
 }
 
+/* Desktop Design Rules */
 @media screen and (min-width: 1000px) {
   .hero-data_text-container {
     flex: 0 1 90%;
