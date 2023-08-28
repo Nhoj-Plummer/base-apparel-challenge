@@ -48,32 +48,6 @@
   }
 } */
 
-.hero-data_image-container {
-  background-size: cover;
-  background-image: url("../../assets/hero-desktop.jpg");
-  background-repeat: no-repeat;
-}
-
-/* Mobile Design Rules  */
-@media screen and (max-width: 999px) {
-  .hero-data_text-image {
-    order: 1;
-    height: 10%;
-    background-color: green;
-  }
-
-  .hero-data_text-container {
-    order: 3;
-    height: 60%;
-    background-color: blue;
-  }
-
-  .hero-data_image-container {
-    order: 2;
-    height: 40%;
-    background-color: red;
-  }
-}
 .hero-data_image-container,
 .hero-data_text-container,
 .hero-data_text-image {
@@ -82,6 +56,33 @@
   align-items: center;
   justify-content: center;
 }
+
+.hero-data_image-container {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Mobile Design Rules  */
+@media screen and (max-width: 999px) {
+  .hero-data_text-image {
+    order: 1;
+    background-color: green;
+  }
+
+  .hero-data_text-container {
+    order: 3;
+    background-color: blue;
+  }
+
+  .hero-data_image-container {
+    order: 2;
+
+    background-image: url("../../assets/hero-mobile.jpg");
+    background-color: red;
+  }
+}
+/* Mobile Design Rules  End */
 
 /* Desktop Design Rules */
 @media screen and (min-width: 1000px) {
@@ -110,6 +111,7 @@
   .hero-data_image-container {
     width: 50%;
     height: 100%;
+    background-image: url("../../assets/hero-desktop.jpg");
     background-color: red;
   }
 }
