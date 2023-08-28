@@ -98,7 +98,7 @@
   }
 
   .hero-data_text-image {
-    width: 60%;
+    width: 50%;
     background-color: green;
   }
 
@@ -108,7 +108,7 @@
   }
 
   .hero-data_image-container {
-    width: 40%;
+    width: 50%;
     height: 100%;
     background-color: red;
   }
