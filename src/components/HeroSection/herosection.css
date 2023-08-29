@@ -1,9 +1,12 @@
- /* Genereal RUles but also Mobile RUles"flex-direction:column" is meant for mobile first design" */
+/* Genereal RUles but also Mobile RUles"flex-direction:column" is meant for mobile first design" */
 .hero-section-container {
   display: flex;
   max-width: 100%;
   height: 90rem;
   flex-direction: column;
+  background-image: url("../../assets/bg-pattern-desktop.svg");
+  background-repeat: repeat-x;
+  /* background-size: 40%  100%; */
   border: 1px solid black;
 }
 

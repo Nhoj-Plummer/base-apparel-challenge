@@ -1,7 +1,8 @@
 import React from "react"
 import HeroSection from "../HeroSection/herosection"
 import "./herodata.css"
-import Logo from "../../assets/logo.svg"
+// import Logo from "../../assets/logo.svg"
+
 
 const Herodata = () => {
   return (
