@@ -13,7 +13,7 @@ const Herodata = () => {
       </div>
       <div className="hero-data_text-container">
         <h1 className="hero-data-text-header">
-          <span>We're</span> Coming Soon
+          <span>We're</span> COMING SOON
         </h1>
         <p className="hero-data-text-description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <form className="hero-data-text-form">
