@@ -35,6 +35,7 @@
   .hero-data_text-container {
     order: 3;
     text-align: center;
+    padding: 10px;
     /* background: center / cover no-repeat url("../../assets/bg-pattern-desktop.svg"); */
   }
 
@@ -50,18 +51,42 @@
     margin: auto;
     max-width: 100%;
     line-height: 1.5rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-top: 1.5rem;
+  }
+
+  .hero-data-text-form {
+    margin-top: 1rem;
+    border: 1px solid;
+  }
+
+  .hero-data-text-form input {
+    border-radius: 30px;
+    padding: 0.8rem 2.5rem;
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+  }
+
+  .hero-data-text-form input::placeholder {
+    color: var(--desaturated-red);
+  }
+
+  .hero-data-text-form button {
+    
+  }
+
+  .hero-data-text-form_error {
+    margin-top: 10px;
+    color: var(--soft-red);
   }
 
   .hero-data_image-container {
     order: 2;
+    
     background-image: url("../../assets/hero-mobile.jpg");
     background-position: center center;
     background-size: cover;
   }
-
-  
 }
 /* Mobile Design Rules  End */
 

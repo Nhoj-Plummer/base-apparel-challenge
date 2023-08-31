@@ -27,7 +27,7 @@ const Herodata = () => {
               <img src={SubButton} alt="button" />
             </button>
           </div>
-          <p>Please provide a valid email</p>
+          <p className="hero-data-text-form_error">Please provide a valid email</p>
         </form>
       </div>
       <div className="hero-data_image-container">
