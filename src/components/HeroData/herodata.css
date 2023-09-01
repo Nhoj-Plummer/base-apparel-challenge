@@ -29,7 +29,8 @@
 @media screen and (max-width: 999px) {
   .hero-data_text-image {
     order: 1;
-    background-color: green;
+    padding: 25px;
+    background-color: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98));
   }
 
   .hero-data_text-container {
@@ -43,8 +44,9 @@
     margin: auto;
     max-width: 70%;
     letter-spacing: 0.313rem;
-    line-height: 2.3rem;
-    margin-top: 3.125rem;
+    line-height: 3rem;
+    font-size:40px;
+    margin-top: 2rem;
   }
 
   .hero-data-text-description {
@@ -62,7 +64,6 @@
     justify-content: center;
     width: 100%;
     margin-top: 1rem;
-   
   }
 
   .hero-data-text-form input {
@@ -77,7 +78,7 @@
   }
 
   .hero-data-text-form_error-logo {
-    
+    display: none;
     position: absolute;
     right: 24%;
   }
@@ -101,7 +102,8 @@
 
   .hero-data_image-container {
     order: 2;
-    flex: 0 1 20%;
+    height: 300px;
+    width: 100%;
     background-image: url("../../assets/hero-mobile.jpg");
     background-position: center center;
     background-size: cover;

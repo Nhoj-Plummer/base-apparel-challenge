@@ -10,7 +10,6 @@ const Herodata = () => {
     <HeroSection>
       <div className="hero-data_text-image">
         <img src={Logo} alt="logo" />
-        <h1>1</h1>{" "}
       </div>
       <div className="hero-data_text-container">
         <h1 className="hero-data-text-header">
@@ -20,7 +19,7 @@ const Herodata = () => {
         <form>
           <div className="hero-data-text-form">
             <input type="email" name="email" placeholder="Email Address" required />
-            <img src={Error} alt="error" className="hero-data-text-form_error-logo"/>
+            <img src={Error} alt="error" className="hero-data-text-form_error-logo" />
             <button type="submit">
               <img src={SubButton} alt="button" />
             </button>
@@ -28,9 +27,7 @@ const Herodata = () => {
           <p className="hero-data-text-form_error">Please provide a valid email</p>
         </form>
       </div>
-      <div className="hero-data_image-container">
-        <h1>3</h1>
-      </div>
+      <div className="hero-data_image-container"></div>
     </HeroSection>
   )
 }
