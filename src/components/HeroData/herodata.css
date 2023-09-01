@@ -59,14 +59,16 @@
   .hero-data-text-form {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 1rem;
-    border: 1px solid ;
+   
   }
 
   .hero-data-text-form input {
     border-radius: 30px;
     padding: 0.8rem 2.5rem;
+    width: 100%;
     border: 1px solid hsl(0, 36%, 70%);
   }
 
@@ -75,12 +77,16 @@
   }
 
   .hero-data-text-form_error-logo {
-    right: 34%;
+    
+    position: absolute;
+    right: 24%;
   }
 
   .hero-data-text-form button {
+    position: absolute;
     height: 43px;
-    right: 45px;
+    width: 60px;
+    right: 25px;
     border-style: none;
     border-radius: 50px;
     box-shadow: 20px 5px 10px hsla(0, 36%, 70%, 0.5);
@@ -88,6 +94,7 @@
   }
 
   .hero-data-text-form_error {
+    display: none;
     margin-top: 10px;
     color: var(--soft-red);
   }
