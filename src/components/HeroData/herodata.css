@@ -35,7 +35,7 @@
   .hero-data_text-container {
     order: 3;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     /* background: center / cover no-repeat url("../../assets/bg-pattern-desktop.svg"); */
   }
 
@@ -58,12 +58,16 @@
   .hero-data-text-form {
     margin-top: 1rem;
     border: 1px solid;
+
   }
 
   .hero-data-text-form input {
     border-radius: 30px;
     padding: 0.8rem 2.5rem;
-    width: 100%;
+    width: 70%;
+    background-image: url('../../assets/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
     border: 1px solid hsl(0, 36%, 70%);
   }
 
@@ -71,9 +75,12 @@
     color: var(--desaturated-red);
   }
 
+
   .hero-data-text-form button {
-    
+   
   }
+
+  /* We gotta figure out how to posionit the button next */
 
   .hero-data-text-form_error {
     margin-top: 10px;
@@ -82,7 +89,7 @@
 
   .hero-data_image-container {
     order: 2;
-    
+
     background-image: url("../../assets/hero-mobile.jpg");
     background-position: center center;
     background-size: cover;

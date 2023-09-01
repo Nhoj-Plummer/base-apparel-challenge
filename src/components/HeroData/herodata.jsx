@@ -20,9 +20,9 @@ const Herodata = () => {
         <form>
           <div className="hero-data-text-form">
             <input type="email" name="email" placeholder="Email Address" required />
-            <label for="email">
+            {/* <label for="email">
               <img src={Error} alt="error" />
-            </label>
+            </label> */}
             <button type="submit">
               <img src={SubButton} alt="button" />
             </button>
