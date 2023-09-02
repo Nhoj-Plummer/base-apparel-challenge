@@ -81,16 +81,15 @@
   }
 
   .hero-data-text-form_error-logo {
-    display: none;
     position: absolute;
-    right: 24%;
+    right: 28%;
   }
 
   .hero-data-text-form button {
     position: absolute;
     height: 43px;
-    width: 60px;
-    right: 25px;
+    width: 70px;
+    right: 30px;
     border-style: none;
     border-radius: 50px;
     box-shadow: 20px 5px 10px hsla(0, 36%, 70%, 0.5);
@@ -98,7 +97,6 @@
   }
 
   .hero-data-text-form_error {
-    /* display: none; */
     margin-top: 10px;
     color: var(--soft-red);
   }

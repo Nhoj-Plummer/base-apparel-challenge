@@ -27,14 +27,13 @@ const Herodata = () => {
         <p className="hero-data-text-description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <form>
           <div className="hero-data-text-form">
-            <input value={email} type="text" name="email" placeholder="Email Address" required onChange={e => setEmail(e.target.value)} />
-            <img src={Error} alt="error" className="hero-data-text-form_error-logo" />
+            <input value={email} type="text" name="email" placeholder="Email Address" onChange={e => setEmail(e.target.value)} />
+            {email ? <img src={Error} alt="error" className="hero-data-text-form_error-logo" /> : null}
             <button type="submit">
               <img src={SubButton} alt="button" />
             </button>
           </div>
-          {email ? <p className="hero-data-text-form_error">Please provide a valid email</p> : <p className="hero-data-text-form_error"></p>}
-          {/* <p className="hero-data-text-form_error">Please provide a valid email</p> */}
+          {email ? <p className="hero-data-text-form_error">Please provide a valid email</p> : <p></p>}
         </form>
       </div>
       <div className="hero-data_image-container"></div>
