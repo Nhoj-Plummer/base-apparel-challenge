@@ -9,11 +9,15 @@ const Herodata = () => {
   const [email, setEmail] = useState("")
   // const [error, setError] = useState("")
 
-  // const handleSubmit = e => {
-  //   e.preventDefault()
-  //   if (email) {
-  //   console.log(email)
-  // }
+  const handleChange = e => {
+    setEmail(e.target.value)
+    let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
+    
+     if (reg.test(email) === false) {
+      console.log("Email is Not Correct");
+     }
+    // console.log(email)
+  }
 
   return (
     <HeroSection>
@@ -27,13 +31,13 @@ const Herodata = () => {
         <p className="hero-data-text-description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <form>
           <div className="hero-data-text-form">
-            <input value={email} type="text" name="email" placeholder="Email Address" onChange={e => setEmail(e.target.value)} />
-            {email ? <img src={Error} alt="error" className="hero-data-text-form_error-logo" /> : null}
+            <input type="email" value={email} name="email" placeholder="Email Address" onChange={handleChange} required />
+            <img src={Error} alt="error" className="hero-data-text-form_error-logo" />
             <button type="submit">
               <img src={SubButton} alt="button" />
             </button>
           </div>
-          {email ? <p className="hero-data-text-form_error">Please provide a valid email</p> : <p></p>}
+          {/* {email ? <p className="hero-data-text-form_error">Please provide a valid email</p> : <p></p>} */}
         </form>
       </div>
       <div className="hero-data_image-container"></div>
