@@ -44,7 +44,7 @@
     max-width: 70%;
     letter-spacing: 0.313rem;
     line-height: 3rem;
-    font-size:40px;
+    font-size: 40px;
     margin-top: 2rem;
   }
 
@@ -76,6 +76,10 @@
     color: var(--desaturated-red);
   }
 
+  .hero-data-text-form input:focus {
+    outline: none;
+  }
+
   .hero-data-text-form_error-logo {
     display: none;
     position: absolute;
@@ -94,7 +98,7 @@
   }
 
   .hero-data-text-form_error {
-    display: none;
+    /* display: none; */
     margin-top: 10px;
     color: var(--soft-red);
   }
