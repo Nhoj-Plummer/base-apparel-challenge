@@ -9,13 +9,19 @@ const Herodata = () => {
   const [email, setEmail] = useState("")
   // const [error, setError] = useState("")
 
+  function validateEmail(email) {
+    return /\S+@\S+\.\S+/.test(email)
+  }
+
   const handleChange = e => {
+    if (!validateEmail(e.target.value)) {
+      
+      console.log("Email is Not Correct")
+    } else {
+      console.log("Email is Correct")
+    }
+
     setEmail(e.target.value)
-    let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
-    
-     if (reg.test(email) === false) {
-      console.log("Email is Not Correct");
-     }
     // console.log(email)
   }
 
