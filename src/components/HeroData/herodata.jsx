@@ -7,22 +7,29 @@ import Error from "../../assets/icon-error.svg"
 
 const Herodata = () => {
   const [email, setEmail] = useState("")
-  // const [error, setError] = useState("")
+  const [error, setError] = useState(null)
 
   function validateEmail(email) {
     return /\S+@\S+\.\S+/.test(email)
   }
 
   const handleChange = e => {
+    /*Conditnional Formations */
+
+    // Not Filled COmpletely or no correctly made
     if (!validateEmail(e.target.value)) {
-      
-      console.log("Email is Not Correct")
-    } else {
-      console.log("Email is Correct")
+      setError(true)
+    }
+    // Empty Field
+    if (e.target.value === "") {
+      setError(false)
     }
 
+    // Filled Field
+    if (validateEmail(e.target.value)) {
+      setError(false)
+    }
     setEmail(e.target.value)
-    // console.log(email)
   }
 
   return (
@@ -38,12 +45,12 @@ const Herodata = () => {
         <form>
           <div className="hero-data-text-form">
             <input type="email" value={email} name="email" placeholder="Email Address" onChange={handleChange} required />
-            <img src={Error} alt="error" className="hero-data-text-form_error-logo" />
+            {error ? <img src={Error} alt="error" className="hero-data-text-form_error-logo" /> : <img alt="" />}
             <button type="submit">
               <img src={SubButton} alt="button" />
             </button>
           </div>
-          {/* {email ? <p className="hero-data-text-form_error">Please provide a valid email</p> : <p></p>} */}
+          {error ? <p className="hero-data-text-form_error">Please provide a valid email</p> : <p></p>}
         </form>
       </div>
       <div className="hero-data_image-container"></div>
