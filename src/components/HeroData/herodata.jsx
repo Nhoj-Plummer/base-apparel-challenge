@@ -7,12 +7,13 @@ import Error from "../../assets/icon-error.svg"
 
 const Herodata = () => {
   const [email, setEmail] = useState("")
-  const [error, setError] = useState("")
+  // const [error, setError] = useState("")
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log(email)
-  }
+  // const handleSubmit = e => {
+  //   e.preventDefault()
+  //   if (email) {
+  //   console.log(email)
+  // }
 
   return (
     <HeroSection>
@@ -26,9 +27,9 @@ const Herodata = () => {
         <p className="hero-data-text-description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <form>
           <div className="hero-data-text-form">
-            <input id="email" type="text" name="email" value={email} placeholder="Email Address" onChange={e => setEmail(e.target.value)} />
+            <input value={email} type="text" name="email" placeholder="Email Address" required onChange={e => setEmail(e.target.value)} />
             <img src={Error} alt="error" className="hero-data-text-form_error-logo" />
-            <button type="submit" onClick={handleSubmit}>
+            <button type="submit" onClick={console.log(email)}>
               <img src={SubButton} alt="button" />
             </button>
           </div>
