@@ -158,14 +158,14 @@
 
   .hero-data-text-form_error-logo {
     position: absolute;
-    bottom: 15%;
+    bottom: -6.5%;
     right: 70%;
   }
 
   .hero-data-text-form button {
     position: absolute;
     left: 31%;
-    height: 70px;
+    height: 72px;
     width: 125px;
     border-style: none;
     border-radius: 50px;
