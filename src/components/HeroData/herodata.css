@@ -141,12 +141,13 @@
     display: flex;
     width: 50%;
     margin-top: 3rem;
-    
   }
 
   .hero-data-text-form input {
     border-radius: 30px;
     padding: 1.5rem 2.5rem;
+    font-size: 20px;
+    font-weight: 600;
     width: 100%;
     border: 1px solid hsl(0, 36%, 70%);
   }
@@ -157,7 +158,7 @@
 
   .hero-data-text-form_error-logo {
     position: absolute;
-    bottom: 14.5%;
+    bottom: 15%;
     right: 70%;
   }
 
@@ -179,8 +180,12 @@
   .hero-data_text-image {
     flex: 0 1 10%;
     width: 60%;
-    position: relative;
-    border: 1px solid green;
+    padding-left: 17rem;
+    padding-top: 4rem;
+  }
+
+  .hero-data_text-image img {
+    width: 300px;
   }
 
   .hero-data_image-container {
