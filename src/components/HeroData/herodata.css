@@ -128,7 +128,6 @@
     font-size: 80px;
     width: 530px;
     height: fit-content;
-    border: 1px solid;
   }
 
   .hero-data-text-description {
@@ -136,14 +135,13 @@
     margin-top: 1rem;
     width: 560px;
     font-size: 20px;
-    border: 1px solid;
   }
 
   .hero-data-text-form {
     display: flex;
     width: 50%;
     margin-top: 3rem;
-    border: 1px solid;
+    
   }
 
   .hero-data-text-form input {
@@ -159,16 +157,23 @@
 
   .hero-data-text-form_error-logo {
     position: absolute;
-    left: 30%;
-    top: 83.5%;
+    bottom: 14.5%;
+    right: 70%;
   }
 
   .hero-data-text-form button {
+    position: absolute;
+    left: 31%;
     height: 70px;
-    width: 70px;
+    width: 125px;
+    border-style: none;
     border-radius: 50px;
     box-shadow: 20px 5px 10px hsla(0, 36%, 70%, 0.5);
     background: linear-gradient(to right, #f8bfbf, #ee8c8c);
+  }
+
+  .hero-data-text-form_error {
+    margin-left: 40px;
   }
 
   .hero-data_text-image {
