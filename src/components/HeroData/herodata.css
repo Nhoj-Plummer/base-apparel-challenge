@@ -116,6 +116,19 @@
 @media screen and (min-width: 1000px) {
   .hero-data_text-container {
     flex: 0 1 90%;
+    height: 10%;
+    width: 60%;
+    padding-left: 9.375rem;
+    padding-top: 19rem;
+  }
+
+  .hero-data-text-header {
+    letter-spacing: 2rem;
+    line-height: 7rem;
+    font-size: 90px;
+    width: 560px;
+    height: fit-content;
+    border: 1px solid;
   }
 
   .hero-data_text-image {
@@ -131,11 +144,5 @@
     height: 100%;
     background-image: url("../../assets/hero-desktop.jpg");
     background-color: red;
-  }
-
-  .hero-data_text-container {
-    height: 10%;
-    width: 60%;
-    /* background-color: blue; */
   }
 }
