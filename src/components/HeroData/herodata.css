@@ -23,6 +23,19 @@
   color: var(--desaturated-red);
 }
 
+.hero-data-text-form input::placeholder {
+  color: var(--desaturated-red);
+}
+
+.hero-data-text-form input:focus {
+  outline: none;
+}
+
+.hero-data-text-form_error {
+  margin-top: 10px;
+  color: var(--soft-red);
+}
+
 /* General Design Rules End */
 
 /* Mobile Design Rules  */
@@ -72,14 +85,6 @@
     border: 1px solid hsl(0, 36%, 70%);
   }
 
-  .hero-data-text-form input::placeholder {
-    color: var(--desaturated-red);
-  }
-
-  .hero-data-text-form input:focus {
-    outline: none;
-  }
-
   .hero-data-text-form_error-logo {
     position: absolute;
     right: 28%;
@@ -94,11 +99,6 @@
     border-radius: 50px;
     box-shadow: 20px 5px 10px hsla(0, 36%, 70%, 0.5);
     background: linear-gradient(to right, #f8bfbf, #ee8c8c);
-  }
-
-  .hero-data-text-form_error {
-    margin-top: 10px;
-    color: var(--soft-red);
   }
 
   .hero-data_image-container {
@@ -130,13 +130,45 @@
     height: fit-content;
     border: 1px solid;
   }
-  
+
   .hero-data-text-description {
     line-height: 2rem;
     margin-top: 1rem;
     width: 560px;
     font-size: 20px;
     border: 1px solid;
+  }
+
+  .hero-data-text-form {
+    display: flex;
+    width: 50%;
+    margin-top: 3rem;
+    border: 1px solid;
+  }
+
+  .hero-data-text-form input {
+    border-radius: 30px;
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+  }
+
+  .hero-data-text-form input::placeholder {
+    font-size: 16px;
+  }
+
+  .hero-data-text-form_error-logo {
+    position: absolute;
+    left: 30%;
+    top: 83.5%;
+  }
+
+  .hero-data-text-form button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    box-shadow: 20px 5px 10px hsla(0, 36%, 70%, 0.5);
+    background: linear-gradient(to right, #f8bfbf, #ee8c8c);
   }
 
   .hero-data_text-image {
